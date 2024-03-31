@@ -28,8 +28,17 @@ In the figure above, we present the framework of training LFMs with TempNet on t
 
 ### Experimental Results
 
+Results of training LLMs in various settings, including training from scratch, finetuning a pretrained LLM model, and learning TempNet only with a frozen LLM model.
 
+<div align="center">
+  <img src="images/exp_1.jpg" width="80%"/>
+</div>
 
+Results on contrastive learning. For image-text retrieval on Flickr30K and MSCOCO, we compute IR@1 and TR@1 for the Recall@1 on image-retrieval (IR) and text-retrieval (TR). For classification tasks, we compute top-1 accuracy (\%). We report the average of scores and standard deviation over 3 runs with different random seeds.
+
+<div align="center">
+  <img src="images/exp_2.jpg" width="80%"/>
+</div>
 
 ### More Details
 For more details, please refer to our [paper]() 
