@@ -19,8 +19,8 @@ The temperature parameter plays a profound role  during training and/or inferenc
 We introduce **a principled framework** for developing a small yet generalizable network for temperature prediction, TempNet, aimed at enhancing large foundation models (LFMs) such as large language models (LLMs) and CLIP models. The Temperature Network is a plug-and-play architecture that can be implemented atop LFMs. Our solution is composed of a novel learning framework with robust losses underpinned by constrained distributionally robust optimization (DRO), and a properly designed TempNet with theoretical inspiration. TempNet can be trained together with a large foundation model from scratch or learned separately given a pretrained foundation model. It is not only useful for predicting personalized temperature to promote the training of LFMs but also generalizable and transferable to new tasks.
 
 <div align="center" style="display: flex; justify-content: center; align-items: center;">
-  <img src="images/overall.jpg" style="width: 40%; margin-right: 10px;"/>
-  <img src="images/tempnet.jpg" style="width: 40%;"/>
+  <img src="images/overall.jpg" style="width: 20%; margin-right: 10px;"/>
+  <img src="images/tempnet.jpg" style="width: 20%;"/>
 </div>
 
 ### Experimental Results
