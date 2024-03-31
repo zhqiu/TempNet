@@ -1,0 +1,21 @@
+# Parameters used for text generation
+# Make sure `load` is specified somewhere else
+{
+  # Text gen type: `input-file`, `unconditional` or `interactive`
+  "text_gen_type": "input-file",
+
+  # Params for all
+  "maximum_tokens": 256,
+  "prompt_end": "\n\n\n",
+  "temperature": 1.0,
+  "top_p": 0.0,
+  "top_k": 0,
+  "recompute": false,
+
+  # `unconditional`: samples
+  "num_samples": 1,
+
+  # input/output file
+  "sample_input_file": "/data1/qiuzh/llama_exp/CoT/prompt_short_questions.txt",
+  "sample_output_file": "/data1/qiuzh/llama_exp/CoT/test_gpt_neox_llama.txt",
+}
