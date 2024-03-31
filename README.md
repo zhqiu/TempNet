@@ -6,9 +6,7 @@ The temperature parameter plays a profound role  during training and/or inferenc
 ### Table of Contents  
 
 - [Introduction](#introduction)
-- [Installation](#installation)
 - [Training](#training)
-- [Models](#models)
 - [Inference](#inference)
 - [Acknowledgment](#acknowledgment)
 
@@ -43,16 +41,34 @@ Results on contrastive learning. For image-text retrieval on Flickr30K and MSCOC
 ### More Details
 For more details, please refer to our [paper]() 
 
-## Installation
-
 
 ## Training
 
-
-## Models
-
+We conduct experiments across various tasks and models to validate the effectiveness of TempNet. Given the different training frameworks required by each model, we distribute the training code for different models across four directories: `GPT_2`, `LLaMA-1`, `LLaMA-2`, and `Bimodal-CL`.
 
 ## Inference
 
+We upload the base models for LLaMA 2 Chat 7B, 13B, 70B, and their respective TempNets to [Hugging Face](https://huggingface.co/LLM-Opt). An example code for inference using our TempNet is as follows:
+
+```python
+from tempnet import LLaMA_TempNet
+from transformers import AutoTokenizer, GenerationConfig
+
+model_name = 'LLM-Opt/TempNet-LLaMA2-Chat-7B-v0.1'
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, legacy=False)
+generation_config = GenerationConfig.from_pretrained(model_name)
+model = LLaMA_TempNet.from_pretrained(model_name, device_map="auto", torch_dtype=torch.float16)
+
+inputs = 'How do you get water in the desert?'
+input_ids = tokenizer(inputs, return_tensors="pt").input_ids.cuda()
+
+outputs = model.generate(input_ids, generation_config=generation_config)
+response = tokenizer.decode(outputs[0], skip_special_tokens=True)[len(inputs)-1:].strip()
+```
 
 ## Acknowledgment
+
+This repository benefits from [ALBEF](https://github.com/salesforce/ALBEF), [GPT-NeoX](https://github.com/EleutherAI/gpt-neox), [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai), [Megatron-LM](https://github.com/NVIDIA/Megatron-LM), [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca), and [DeepSpeed](https://github.com/microsoft/DeepSpeed).
+
+Thanks for their wonderful works and their efforts to further research.
