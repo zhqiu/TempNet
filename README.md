@@ -75,7 +75,6 @@ This repository benefits from [ALBEF](https://github.com/salesforce/ALBEF), [GPT
 Thanks for their wonderful works and their efforts to further research.
 
 ## Citation
-## Reference
 If you find this tutorial helpful, please cite our paper:
 ```
 @article{qiu2024to,
