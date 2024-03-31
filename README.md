@@ -9,6 +9,7 @@ The temperature parameter plays a profound role  during training and/or inferenc
 - [Training](#training)
 - [Inference](#inference)
 - [Acknowledgment](#acknowledgment)
+- [Citation](#citation)
 
 ## Introduction
 
@@ -72,3 +73,15 @@ response = tokenizer.decode(outputs[0], skip_special_tokens=True)[len(inputs)-1:
 This repository benefits from [ALBEF](https://github.com/salesforce/ALBEF), [GPT-NeoX](https://github.com/EleutherAI/gpt-neox), [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai), [Megatron-LM](https://github.com/NVIDIA/Megatron-LM), [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca), and [DeepSpeed](https://github.com/microsoft/DeepSpeed).
 
 Thanks for their wonderful works and their efforts to further research.
+
+## Citation
+## Reference
+If you find this tutorial helpful, please cite our paper:
+```
+@article{qiu2024to,
+  title={To Cool or not to Cool? Temperature Network Meets Large Foundation Models via DRO},
+  author={Zi-Hao Qiu, Siqi Guo, Mao Xu, Tuo Zhao, Lijun Zhang, and Tianbao Yang},
+  journal={arXiv preprint arXiv:TBD},
+  year={2024}
+}
+```
