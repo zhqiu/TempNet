@@ -64,7 +64,7 @@ It is a relatively subjective task to naming a dish. When the temperature value 
 We further demonstrate the predicted temperature parameter produced by the TempNet each time a token here. One can clearly observe that when the potential possibilities for the token to be predicted are numerous, the temperature values are higher. Conversely, when there are fewer potential possibilities for the token to be predicted, the temperature values are lower.
 
 <div align="center">
-  <img src="images/pred_tau.jpg" width="60%"/>
+  <img src="images/pred_tau.jpg" width="100%"/>
 </div>
 
 ### More Details
