@@ -44,7 +44,7 @@ In the following experiments, we investigate two components of our framework: th
   <img src="images/exp3.jpg" width="80%"/>
 </div>
 
-To test TempNet's performance in instruction-following tasks, we fix the LLaMA2 Chat models and trained TempNet, then test them on the [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) benchmark. The results in the table below demonstrate that our TempNet can converge quickly and achieve excellent results.
+To test TempNet's performance in instruction-following tasks, we fix the LLaMA2 Chat models and trained TempNet, then test them on the [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) benchmark. We present the results on three different model sizes in the table below, including the training times of TempNet on Nvidia A100-80G GPUs and their win rates on AlpacaEval data. The results demonstrate that our TempNet can converge quickly and achieve consistent improvements.
 
 <div align="center">
   <img src="images/exp4.jpg" width="40%"/>
