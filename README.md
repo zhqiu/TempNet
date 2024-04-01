@@ -38,6 +38,12 @@ Results on contrastive learning. For image-text retrieval on Flickr30K and MSCOC
   <img src="images/exp_2.jpg" width="80%"/>
 </div>
 
+In the following experiments, we investigate two components of our framework: the DRO-based robust loss and the role of TempNet. One can observe that both components significantly impact performance.
+
+<div align="center">
+  <img src="images/exp3.jpg" width="80%"/>
+</div>
+
 ### More Details
 For more details, please refer to our [paper]() 
 
