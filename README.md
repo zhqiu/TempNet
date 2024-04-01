@@ -59,7 +59,7 @@ Here, we reveal why TempNet enhances performance by comparing the performances o
   <img src="images/exp6.jpg" width="60%"/>
 </div>
 
-It is a relatively subjective task to naming a dish. When the temperature value is lower, it can be observed that the LLaMA2 7B Chat model's output is relatively fixed and lacks creativity. With a higher temperature, the model generates more creative names. With TempNet, in the process of generating names for this task, LLaMA2 7B Chat produces a higher averaged temperature value of 0.82, ultimately creating a novel name ``Tunanadoes''. 
+It is a relatively subjective task to naming a dish. When the temperature value is lower, it can be observed that the LLaMA2 7B Chat model's output is relatively fixed and lacks creativity. With a higher temperature, the model generates more creative names. With TempNet, in the process of generating names for this task, LLaMA2 7B Chat produces a higher averaged temperature value of 0.82, ultimately creating a novel name **Tunanadoes**. 
 
 We further demonstrate the predicted temperature parameter produced by the TempNet each time a token here. One can clearly observe that when the potential possibilities for the token to be predicted are numerous, the temperature values are higher. Conversely, when there are fewer potential possibilities for the token to be predicted, the temperature values are lower.
 
