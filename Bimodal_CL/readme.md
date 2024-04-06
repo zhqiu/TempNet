@@ -1,9 +1,3 @@
-
-
-Run "bash run_isogclr_tempnet.sh" to train and the model will be evaluated automatically at the end of each epoch.
-
-Requirements need to be installed from https://github.com/salesforce/ALBEF/.
-
 ## Requirements:
 - python 3.9
 - torch 1.10
