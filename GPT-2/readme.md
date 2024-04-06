@@ -15,7 +15,14 @@ python prepare_data.py -d ./data openwebtext2
 ```
 
 ## Training
+Run the baseline method:
 ```bash
+
+```
+
+Training GPT-2 with TempNet:
+```bash
+
 ```
 
 ## Evaluation
