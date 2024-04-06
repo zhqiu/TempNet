@@ -17,12 +17,12 @@ python prepare_data.py -d ./data openwebtext2
 ## Training
 Run the baseline method:
 ```bash
-
+python ./deepy.py train.py configs/125M.yml owt2_setup.yml
 ```
 
 Training GPT-2 with TempNet:
 ```bash
-
+python ./deepy.py train.py configs/125M.yml owt2_setup_tempnet.yml
 ```
 
 ## Evaluation
