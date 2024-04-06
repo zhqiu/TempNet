@@ -1,4 +1,4 @@
-## Requirements:
+## Requirements
 - python 3.9
 - torch 1.10
 - torchvision 0.11 
