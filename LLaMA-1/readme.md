@@ -12,17 +12,11 @@ python prepare_data.py -d ./data openwebtext2
 The implementation of TempNet and loss function can be found in `megatron/model/tempnet.py`.
 
 ## Training
-Configuration: In `125M.yml`, you can set parameters such as learning rate, batch size, and training iterations; in `owt2_setup.yml`, you can specify the locations for log and checkpoint files. Furthermore, in `owt2_setup_tempnet.yml`, you can also configure parameters related to TempNet, such as $\rho$ and TempNet's learning rate.
-
-Run the baseline method:
+Due to the large size of the LLaMA 7B model parameters, we use 4 Nvidia A6000 GPUs. The command to start the experiment is as follows:
 ```bash
-python ./deepy.py train.py configs/125M.yml owt2_setup.yml
+CUDA_VISIBLE_DEVICES=0,1,2,3 python ./deepy.py train.py -d configs llama/7B.yml llama/train_config.yml
 ```
 
-Training GPT-2 with TempNet:
-```bash
-python ./deepy.py train.py configs/125M.yml owt2_setup_tempnet.yml
-```
 
 ## Evaluation
 For the model trained by the baseline method:
