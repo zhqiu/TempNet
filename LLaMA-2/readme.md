@@ -11,7 +11,10 @@ python prepare_data.py -d ./data openwebtext2
 The implementation of TempNet and loss function can be found in `megatron/model/tempnet.py` and `megatron/core/tensor_parallel/cross_entropy.py`, respectively.
 
 ## Training
-Configure training parameters in "pretrain_llama_distributed.sh", and run "bash pretrain_llama_distributed.sh" to train. 
+Configure your training settings within `pretrain_llama_distributed.sh`, then launch the training process by running 
+```bash
+bash pretrain_llama_distributed.sh
+```
 
 
 ## Evaluation
