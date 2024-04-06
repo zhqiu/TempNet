@@ -16,6 +16,8 @@ Due to the large size of the LLaMA 7B model parameters, we use 4 Nvidia A6000 GP
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python ./deepy.py train.py -d configs llama/7B.yml llama/train_config.yml
 ```
+In `configs/llama/7B.yml`, you can set parameters such as learning rate, batch size, and training iterations; in `configs/llama/train_config.yml`, you can specify the locations for log and checkpoint files, and some configure parameters related to TempNet, such as $\rho$ and TempNet's learning rate.
+
 
 
 ## Evaluation
