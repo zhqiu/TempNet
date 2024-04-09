@@ -68,7 +68,7 @@ We further demonstrate the predicted temperature parameter produced by the TempN
 </div>
 
 ### More Details
-For more details, please refer to our [paper]() 
+For more details, please refer to our [paper](http://arxiv.org/abs/2404.04575) 
 
 
 ## Training
@@ -109,7 +109,8 @@ If you find this tutorial helpful, please cite our paper:
 @article{qiu2024to,
   title={To Cool or not to Cool? Temperature Network Meets Large Foundation Models via DRO},
   author={Zi-Hao Qiu, Siqi Guo, Mao Xu, Tuo Zhao, Lijun Zhang, and Tianbao Yang},
-  journal={arXiv preprint arXiv:TBD},
+  journal={arXiv preprint arXiv:2404.04575
+},
   year={2024}
 }
 ```
