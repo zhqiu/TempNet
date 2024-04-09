@@ -109,8 +109,7 @@ If you find this tutorial helpful, please cite our paper:
 @article{qiu2024to,
   title={To Cool or not to Cool? Temperature Network Meets Large Foundation Models via DRO},
   author={Zi-Hao Qiu, Siqi Guo, Mao Xu, Tuo Zhao, Lijun Zhang, and Tianbao Yang},
-  journal={arXiv preprint arXiv:2404.04575
-},
+  journal={arXiv preprint arXiv:2404.04575},
   year={2024}
 }
 ```
