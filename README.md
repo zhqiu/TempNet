@@ -77,7 +77,7 @@ We conduct experiments across various tasks and models to validate the effective
 
 ## Inference
 
-We upload the base models for LLaMA 2 Chat 7B, 13B, 70B, and their respective TempNets to [Hugging Face](https://huggingface.co/LLM-Opt). The `tempnet.py` in this repository contains the definition of the TempNet class and a class that inherits from Hugging Face's LLaMA, including TempNet. People can download this file and use the following code to perform inference with LLaMA that incorporates TempNet.
+We upload the base models for LLaMA 2 Chat 7B, 13B, 70B, and their respective TempNets to [Hugging Face](https://huggingface.co/LLM-Opt). The `tempnet.py` in the [repository](https://github.com/zhqiu/TempNet) contains the definition of the TempNet class and a class that inherits from Hugging Face's LLaMA, including TempNet. People can download this file and use the following code to perform inference with LLaMA that incorporates TempNet.
 
 ```python
 import torch
